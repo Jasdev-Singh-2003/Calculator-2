@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="container">
+    <input type="text" id="display" readonly/>
+    <div id="keys">
+      <button class="grayColor" onclick="deleteLast()">C</button>
+      <button class="grayColor" onclick="clearDisplay()">AC</button>
+      <button class="grayColor" onclick="appendToDisplay('%')">%</button>
+      <button class="orangeColor" onclick="appendToDisplay('/')">÷</button>
+      <button onclick="appendToDisplay('7')">7</button>
+      <button onclick="appendToDisplay('8')">8</button>
+      <button onclick="appendToDisplay('9')">9</button>
+      <button class="orangeColor" onclick="appendToDisplay('*')">×</button>
+      <button onclick="appendToDisplay('4')">4</button>
+      <button onclick="appendToDisplay('5')">5</button>
+      <button onclick="appendToDisplay('6')">6</button>
+      <button class="orangeColor" onclick="appendToDisplay('-')">&ndash;</button>
+      <button onclick="appendToDisplay('1')">1</button>
+      <button onclick="appendToDisplay('2')">2</button>
+      <button onclick="appendToDisplay('3')">3</button>
+      <button class="orangeColor" onclick="appendToDisplay('+')">+</button>
+      <button class="spanTwo" onclick="appendToDisplay('0')">0</button>
+      <button onclick="appendToDisplay('.')">.</button>
+      <button class="orangeColor" onclick="calculate()">=</button>
+    </div>
+  </div>
+  
+  <script src="script.js">
+    function appendToDisplay(){
+      console.log(document.querySelectorAll('button').innerHTML)
+    }
+  </script>
+</body>
+</html>
