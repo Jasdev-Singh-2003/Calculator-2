@@ -30,7 +30,8 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background: rgb(10, 10, 10); */
+  /* background: rgb(0, 0, 0); */
+  background: #eeeeee;
 }
 
 #container{
@@ -75,6 +76,10 @@ button{
   font-size: 2.50rem;
   font-weight: normal;
   cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button:hover{
