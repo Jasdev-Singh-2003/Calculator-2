@@ -22,10 +22,17 @@ function clearDisplay(){
 
 function calculate(){
   try{
-    display.value = eval(display.value);
+    if (display.value.includes('%')) {
+      display.value = eval(display.value.replace('%', '')) / 100;
+    } else {
+      display.value = eval(display.value);
+    }
   }
   catch(error){
-    display.value = 'Error';
+    if(display.value.includes('%'))return;
+    else{
+      display.value = 'Error';
+    }
   }
 }
 
